@@ -22,4 +22,8 @@ public class SituationResult {
 
     @Column(nullable = false)
     private String result;
+
+    @Column(name = "survive_state", nullable = false)
+    @Enumerated(value = EnumType.STRING)
+    private SurviveState surviveState;
 }
