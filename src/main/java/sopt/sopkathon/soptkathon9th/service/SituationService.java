@@ -1,12 +1,12 @@
 package sopt.sopkathon.soptkathon9th.service;
 
+import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import sopt.sopkathon.soptkathon9th.controller.dto.request.SituationProceedRequestDto;
 import sopt.sopkathon.soptkathon9th.controller.dto.request.SituationResultRequestDto;
 import sopt.sopkathon.soptkathon9th.controller.dto.response.SituationResultResponseDto;
 import sopt.sopkathon.soptkathon9th.domain.*;
-import sopt.sopkathon.soptkathon9th.exception.Error;
 import sopt.sopkathon.soptkathon9th.exception.model.NotFoundException;
 import sopt.sopkathon.soptkathon9th.repository.ClientRepository;
 import sopt.sopkathon.soptkathon9th.repository.SituationProceedRepository;
@@ -16,7 +16,6 @@ import sopt.sopkathon.soptkathon9th.repository.SituationResultRepository;
 import javax.transaction.Transactional;
 
 import static sopt.sopkathon.soptkathon9th.exception.Error.*;
-import static sopt.sopkathon.soptkathon9th.exception.Error.NOT_EXIST_CLIENT_EXCEPTION;
 
 @Service
 @RequiredArgsConstructor

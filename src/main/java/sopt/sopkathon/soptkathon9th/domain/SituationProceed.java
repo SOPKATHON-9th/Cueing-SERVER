@@ -1,6 +1,7 @@
 package sopt.sopkathon.soptkathon9th.domain;
 
 import lombok.*;
+import sopt.sopkathon.soptkathon9th.controller.dto.response.SituationProceedDto;
 
 import javax.persistence.*;
 
@@ -26,4 +27,14 @@ public class SituationProceed {
 
     @Column(name = "is_proceed", nullable = false)
     private boolean isProceed;
+
+
+    public SituationProceedDto toDto() {
+        return SituationProceedDto.builder()
+                .situationWhat(situation.getSituationWhat().name())
+                .situationWhere(situation.getSituationWhere().name())
+                .situationIn(situation.getSituationIn().name())
+                .isProceed(isProceed)
+                .build();
+    }
 }
