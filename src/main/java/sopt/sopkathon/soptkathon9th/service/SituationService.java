@@ -3,13 +3,12 @@ package sopt.sopkathon.soptkathon9th.service;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import sopt.sopkathon.soptkathon9th.controller.dto.request.SituationResultRequestDto;
+import sopt.sopkathon.soptkathon9th.controller.dto.response.SituationResultResponseDto;
 import sopt.sopkathon.soptkathon9th.domain.*;
 import sopt.sopkathon.soptkathon9th.exception.Error;
 import sopt.sopkathon.soptkathon9th.exception.model.NotFoundException;
 import sopt.sopkathon.soptkathon9th.repository.SituationRepository;
 import sopt.sopkathon.soptkathon9th.repository.SituationResultRepository;
-
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -17,11 +16,11 @@ public class SituationService {
     private final SituationRepository situationRepository;
     private final SituationResultRepository situationResultRepository;
 
-    public String getSituationResult(final SituationResultRequestDto request) {
+    public SituationResultResponseDto getSituationResult(final SituationResultRequestDto request) {
         Situation situation = getSituation(request);
         SituationResult situationResult = getSituationResult(situation);
 
-        return situationResult.getResult();
+        return SituationResultResponseDto.from(situationResult.getResult());
     }
 
     private SituationResult getSituationResult(Situation situation) {
