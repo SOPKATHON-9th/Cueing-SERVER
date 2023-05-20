@@ -15,6 +15,11 @@ public class ClientController {
 
     private final ClientService clientService;
 
+    @PostMapping("/add")
+    public void addUser() {
+        clientService.addUser();
+    }
+
     @GetMapping("/myPage")
     @ResponseStatus(HttpStatus.OK)
     public ApiResponse getMyPage(@RequestParam final Long userId) {
