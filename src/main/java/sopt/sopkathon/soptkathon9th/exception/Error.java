@@ -18,6 +18,7 @@ public enum Error {
      * 404 NOT FOUND
      */
     NOT_EXIST_SITUATION_DATA_EXCEPTION(HttpStatus.NOT_FOUND, "존재하지 않는 상황 정보입니다"),
+    NOT_EXIST_SURVIVE_STATE_EXCEPTION(HttpStatus.NOT_FOUND, "존재하지 않는 생존 정보입니다"),
     NOT_EXIST_SITUATION_EXCEPTION(HttpStatus.NOT_FOUND, "존재하지 않는 상황입니다"),
     NOT_EXIST_CLIENT_EXCEPTION(HttpStatus.NOT_FOUND, "존재하지 않는 유저입니다."),
 

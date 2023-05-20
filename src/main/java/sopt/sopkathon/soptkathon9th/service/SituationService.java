@@ -51,9 +51,20 @@ public class SituationService {
     }
 
     private Situation getSituation(SituationResultRequestDto request) {
-        SituationWhat situationWhat = SituationWhat.valueOf(request.getSituationWhat());
-        SituationWhere situationWhere = SituationWhere.valueOf(request.getSituationWhere());
-        SituationIn situationIn = SituationIn.valueOf(request.getSituationIn());
+        SituationWhat situationWhat;
+        SituationWhere situationWhere;
+        SituationIn situationIn;
+
+
+        try {
+            situationWhat = SituationWhat.valueOf(request.getSituationWhat());
+            situationWhere = SituationWhere.valueOf(request.getSituationWhere());
+            situationIn = SituationIn.valueOf(request.getSituationIn());
+
+        } catch (Exception e) {
+
+            throw new NotFoundException(NOT_EXIST_SITUATION_DATA_EXCEPTION, NOT_EXIST_SITUATION_DATA_EXCEPTION.getMessage());
+        }
 
         return situationRepository.findSituationBySituationData(
                         situationWhat,
@@ -64,9 +75,18 @@ public class SituationService {
     }
 
     private Situation getSituation(SituationProceedRequestDto request) {
-        SituationWhat situationWhat = SituationWhat.valueOf(request.getSituationWhat());
-        SituationWhere situationWhere = SituationWhere.valueOf(request.getSituationWhere());
-        SituationIn situationIn = SituationIn.valueOf(request.getSituationIn());
+        SituationWhat situationWhat;
+        SituationWhere situationWhere;
+        SituationIn situationIn;
+
+        try {
+            situationWhat = SituationWhat.valueOf(request.getSituationWhat());
+            situationWhere = SituationWhere.valueOf(request.getSituationWhere());
+            situationIn = SituationIn.valueOf(request.getSituationIn());
+
+        } catch (Exception e) {
+            throw new NotFoundException(NOT_EXIST_SITUATION_DATA_EXCEPTION, NOT_EXIST_SITUATION_DATA_EXCEPTION.getMessage());
+        }
 
         return situationRepository.findSituationBySituationData(
                         situationWhat,
