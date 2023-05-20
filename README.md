@@ -77,12 +77,12 @@ ex. 검색기능 : 장소, 제목을 키워드로 최신순으로 정렬해 퍼�
 ## 🗺️ ERD 작성 및 프로젝트 구조
 
 ### ERD Cloud
-[helpme](https://www.erdcloud.com/d/2dcS4WQZRNmbDLcHn)
-<img width="995" alt="스크린샷 2023-05-20 오후 11 57 44" src="https://github.com/SOPKATHON-9th/SERVER/assets/84304802/4045744f-a06c-43b9-a8d1-bdbb384f48ab">
+<img width="995" alt="스크린샷 2023-05-20 오후 11 57 44" src="https://github.com/SOPKATHON-9th/SERVER/assets/84304802/93aa202b-8eaf-468d-a096-7ca0da80b68f">
+
 
 ### 프로젝트 구조
+<img width="306" alt="image" src="https://github.com/SOPKATHON-9th/SERVER/assets/84304802/44ee02e4-1e88-4d1c-b914-f02e83c01e7a">
 
-[올려야 됨]
 
 ---
 
