@@ -12,7 +12,7 @@ public enum Success {
     /**
      * 200 OK
      */
-    SIGNUP_SUCCESS(HttpStatus.OK, "조회에 성공했습니다."),
+    FIND_RESULT_SUCCESS(HttpStatus.OK, "생존 결과 전송에 성공했습니다."),
     ;
 
     private final HttpStatus httpStatus;

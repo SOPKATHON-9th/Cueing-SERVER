@@ -17,7 +17,8 @@ public enum Error {
     /**
      * 404 NOT FOUND
      */
-    NOT_EXIST_STORE_ID_EXCEPTION(HttpStatus.NOT_FOUND, "존재하지 않는 매장번호입니다"),
+    NOT_EXIST_SITUATION_DATA_EXCEPTION(HttpStatus.NOT_FOUND, "존재하지 않는 상황 정보입니다"),
+    NOT_EXIST_SITUATION_EXCEPTION(HttpStatus.NOT_FOUND, "존재하지 않는 상황입니다"),
 
     /**
      * 409 CONFLICT
