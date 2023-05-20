@@ -17,11 +17,14 @@ public class Situation {
     private Long situationId;
 
     @Column(name = "situation_what", nullable = false)
-    private String situationWhat;
+    @Enumerated(value = EnumType.STRING)
+    private SituationWhat situationWhat;
 
     @Column(name = "situation_where", nullable = false)
-    private String situationWhere;
+    @Enumerated(value = EnumType.STRING)
+    private SituationWhere situationWhere;
 
     @Column(name = "situation_in", nullable = false)
-    private String situationIn;
+    @Enumerated(value = EnumType.STRING)
+    private SituationIn situationIn;
 }
