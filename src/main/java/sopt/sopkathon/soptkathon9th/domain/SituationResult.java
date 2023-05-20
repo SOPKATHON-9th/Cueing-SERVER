@@ -17,16 +17,8 @@ public class SituationResult {
     private Long resultId;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "situationProceedId")
-    private SituationProceed situationProceed;
-
-    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "situationId")
     private Situation situation;
-
-    @Column(name = "servive_state", nullable = false)
-    @Enumerated(value = EnumType.STRING)
-    private SurviveState surviveState;
 
     @Column(nullable = false)
     private String result;
