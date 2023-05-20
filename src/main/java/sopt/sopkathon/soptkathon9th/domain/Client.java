@@ -8,7 +8,7 @@ import javax.persistence.*;
 @Getter
 @Builder
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@NoArgsConstructor
 public class Client {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
