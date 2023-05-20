@@ -5,6 +5,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import sopt.sopkathon.soptkathon9th.common.dto.ApiResponse;
+import sopt.sopkathon.soptkathon9th.controller.dto.request.SituationProceedRequestDto;
 import sopt.sopkathon.soptkathon9th.controller.dto.request.SituationResultRequestDto;
 import sopt.sopkathon.soptkathon9th.exception.Success;
 import sopt.sopkathon.soptkathon9th.service.SituationService;
@@ -20,5 +21,12 @@ public class SituationController {
     @ResponseStatus(HttpStatus.OK)
     public ApiResponse getResult(@RequestBody final SituationResultRequestDto request) {
         return ApiResponse.success(Success.FIND_RESULT_SUCCESS ,situationService.getSituationResult(request));
+    }
+
+    @PatchMapping("/proceeded")
+    @ResponseStatus(HttpStatus.OK)
+    public ApiResponse proceedSituation(@RequestBody final SituationProceedRequestDto request) {
+        situationService.proceedSituation(request);
+        return ApiResponse.success(Success.PROCEED_MISSION_REGISTER_SUCCESS);
     }
 }

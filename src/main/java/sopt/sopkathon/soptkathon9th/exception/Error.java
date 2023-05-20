@@ -19,6 +19,7 @@ public enum Error {
      */
     NOT_EXIST_SITUATION_DATA_EXCEPTION(HttpStatus.NOT_FOUND, "존재하지 않는 상황 정보입니다"),
     NOT_EXIST_SITUATION_EXCEPTION(HttpStatus.NOT_FOUND, "존재하지 않는 상황입니다"),
+    NOT_EXIST_CLIENT_EXCEPTION(HttpStatus.NOT_FOUND, "존재하지 유저입니다"),
 
     /**
      * 409 CONFLICT

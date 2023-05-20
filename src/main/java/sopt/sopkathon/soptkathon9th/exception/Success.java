@@ -13,6 +13,7 @@ public enum Success {
      * 200 OK
      */
     FIND_RESULT_SUCCESS(HttpStatus.OK, "생존 결과 전송에 성공했습니다."),
+    PROCEED_MISSION_REGISTER_SUCCESS(HttpStatus.OK, "진행한 미션 등록에 성공하였습니다."),
     ;
 
     private final HttpStatus httpStatus;
