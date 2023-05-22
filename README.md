@@ -1,4 +1,21 @@
-# SOPKERTHON TEAM9
+<br>
+<br>
+<p align="center">
+    <img src="https://github.com/SOPKATHON-9th/SERVER/assets/84304802/e3fe1d9f-a1a5-4a4e-a55e-ea904ad46288" width="400" height="400"/>.
+</p>
+<br>
+
+# '🚨Cueing: 실제 재난 상황 대비 시뮬레이션 서비스'
+### 32th SOPKERTHON - 🏆 안드로이드 부문 대상 수상작
+#### Team9 - 9조는 솝트를 9해
+
+<br>
+
+### “📩 재난 문자, 확인하시나요?"
+여러분은 재난 문자를 제대로 확인 하시나요? 대부분은 아닐 것입니다. 
+
+
+---
 
 ## 🛠️ 협업 룰 세팅 (Code & Git Convension)
 
