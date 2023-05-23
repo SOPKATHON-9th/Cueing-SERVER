@@ -124,3 +124,7 @@ ex. 검색기능 : 장소, 제목을 키워드로 최신순으로 정렬해 퍼�
 
 ## 응원사진
 ![KakaoTalk_Photo_2023-05-20-21-32-31](https://github.com/PgmJun/jump-rope-checker/assets/84304802/f4830cf6-a4bb-47c6-8dfc-7530cf25b73d)
+
+
+## 📃 회고
+[티스토리] https://pgmjun.tistory.com/121
